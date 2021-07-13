@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="{LANGUAGE}" dir="ltr" class="smooth">
+
+<head>
+  <meta charset=utf-8>
+  <meta name=viewport content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="{WEBURL}favicon.ico">
+  <title>{TITLE}</title>
+  <link rel=stylesheet href="index.php/css/view/index">
+  <script src="index.php/js/view/index/{LANGUAGE}"></script>
+</head>
+
+<body class="responsive {BODYCLASS} wide" style="background-image:url({BGIMAGE})">
+  <div id=slidemenu_content>
+    <div class="wrapper" id="toTop">
+      <header class="header" id="scroll-to">
+        <div class="menu_wrapper menu_bg">
+          <nav id=topmenu class="topmenu slidemenu">
+            <ul>{MENUS}{LOGIN}</ul>
+          </nav>
+        </div>
+        <div class="icon-language language-menu" title="{LNG_Change language}" data-text="{LANGUAGE}">
+          <ul>{LANGUAGES}</ul>
+        </div>
+      </header>
+      <div class="gcss-wrapper center">
+        <div id="logo">
+          <h2><a href="{WEBURL}index.php" title="{WEBTITLE}">{LOGO}</a></h2>
+          <p class="description">{WEBDESCRIPTION}</p>
+        </div>
+      </div>
+      <div id="skip" class="gcss-wrapper clear">
+        <main id="content" class="border-color">{MAIN}</main>
+      </div>
+    </div>
+    <footer class="footer">
+      <p class=copy>
+        Copyright 2021 ©, <a href="{WEBURL}" target="_blank">{WEBDESCRIPTION}</a><br>
+        {LNG_Version} {VERSION} Created by <a href="https://www.kotchasan.com" target=_blank rel=noreferrer>Kotchasan</a>
+      </p>
+    </footer>
+  </div>
+  <a href=#scroll-to class=scroller title="{LNG_scroll to top}">^</a>
+  <script>
+    $G(window).Ready(function() {
+      initWeb();
+    });
+  </script>
+</body>
+
+</html>
